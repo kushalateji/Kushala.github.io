@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+         body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/bg.jpg") no-repeat fixed; /* Use background property for an image */
+    background-size: cover;
+    color: #ffffffa8; /* Text Color */
+}
+
+        h2, h3 {
+            color: #ffffff83; /* White */
+        }
+        .major {
+            font-size: 1.2em;
+        }
+        .image.main {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded Corners for Image */
+        }
+        #project {
+            max-width: 600px; /* Adjusted to 600px for a slightly thinner article */
+            margin: 20px auto;
+            background-color: rgba(31, 30, 30, 0.947); /* Slightly transparent Darker Grey Background for Content */
+            padding: 20px;
+            border-radius: 10px; /* Rounded Corners for Content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Box Shadow for Depth */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <!-- Project Page Content -->
+    <span id="backButton" onclick="goBack()">&#8592;</span>
+    <div id="project">
+        <h3 class="major">Mobile Charging System Using Foot Power with Near Field Communication Technology</h3>
+        <span class="image main"></span>
+        <h3 style="font-size: 1.2em;">Introduction</h3>
+        <p>
+            The project, "Mobile Charging System Using Foot Power with Near Field Communication Technology," addresses the increasing demand for sustainable energy solutions. In the face of rising energy needs and limitations of traditional sources, the focus is on leveraging foot power and Near Field Communication (NFC) technology for mobile charging. By harnessing mechanical energy through piezoelectric sensors and ensuring secure access with NFC, the project aims to provide an alternative, eco-friendly, and accessible solution for mobile charging in public spaces.
+        </p>
+        <h3 style="font-size: 1.2em;">Key Aspects</h3>
+        <ul>
+            <li>
+                <h3 style="font-size: 1.0em;">Piezoelectric Energy Harvesting</h3>
+                <p>
+                    The system incorporates piezoelectric sensors embedded in a walkable surface, converting mechanical energy from footsteps into electrical power.
+                </p>
+            </li>
+            <li>
+                <h3 style="font-size: 1.0em;">Near Field Communication (NFC) Authentication:</h3>
+                <p>
+                   To ensure controlled access, NFC technology is utilized for user authentication, providing a secure and convenient charging experience.
+                </p>
+            </li>
+            <li>
+                <h3 style="font-size: 1.0em;">Sustainability and Accessibility:</h3>
+                <p>
+                    Focused on promoting green energy, the project aims to address the lack of mobile charging infrastructure in public areas by tapping into renewable foot power, offering a sustainable and accessible solution.
+                </p>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Development Process</h3>
+        <p>
+            The development process involves creating a robust infrastructure that seamlessly integrates piezoelectric energy harvesting and NFC authentication. The steps include:
+        </p>
+        <ul>
+            <li>
+                <h3 style="font-size: 1.0em;">Sensor Integration</h3>
+                <p>
+                    Embedding piezoelectric sensors within the designated walkable area to capture mechanical energy from footsteps.
+                </p>
+            </li>
+
+            <li>
+                <h3 style="font-size: 1.0em;">Energy Harvesting</h3>
+                <p>
+                    Utilizing piezoelectric sensors to convert mechanical energy into electrical energy through the piezoelectric effect.
+                </p>
+            </li>
+
+            <li>
+                <h3 style="font-size: 1.0em;">AC-to-DC Conversion</h3>
+                <p>
+                    Implementing an AC-to-DC converter to rectify the generated electrical output, making it suitable for charging mobile devices.
+                </p>
+            </li>
+
+            <li>
+                <h3 style="font-size: 1.0em;">Near Field Communication (NFC) Integration</h3>
+                <p>
+                    Integrating NFC technology for secure user authentication, allowing controlled access to the charging stations.
+                </p>
+            </li>
+
+            <li>
+                <h3 style="font-size: 1.0em;">System Testing</h3>
+                <p>
+                    Conducting thorough testing of the integrated system to ensure the efficient conversion of footstep energy and reliable NFC authentication.
+                </p>
+            </li>
+
+            <li>
+                <h3 style="font-size: 1.0em;">Optimization</h3>
+                <p>
+                    Fine-tuning the system for optimal performance, including balancing power output, improving charging efficiency, and addressing any identified challenges.
+                </p>
+            </li>
+            <h3 style="font-size: 1.2em;">Experimental Results</h3>
+            
+                
+                    <p>
+                        The experimental phase validated the effectiveness and feasibility of the foot-powered mobile charging system.
+                    </p>
+                
+            <ul>
+                <li>
+                    <h3 style="font-size: 1.0em;">Power Generation</h3>
+                    <p>
+                        Piezoelectric sensors generated electrical power in response to foot traffic, averaging between 10-20 mW.
+                    </p>
+                    <img src="images/power_generation_graph.png" alt="Power Generation Graph" style="width: 350px; height: 150px;"/>
+                </li>
+    
+                <li>
+                    <h3 style="font-size: 1.0em;">NFC Authentication</h3>
+                    <p>
+                        NFC technology ensured secure user authentication, allowing controlled access to the charging stations.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3 style="font-size: 1.0em;">System Stability</h3>
+                    <p>
+                        The system demonstrated stability in real-world scenarios, withstanding foot traffic in pedestrian walkways and parks.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3 style="font-size: 1.0em;">Surface Sensitivity</h3>
+                    <p>
+                        Sensitivity to surface materials was observed, with harder surfaces generating more power compared to softer surfaces.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3 style="font-size: 1.0em;">Charging Time</h3>
+                    <p>
+                        Users achieved reasonable charging times, indicating the system's practicality for mobile device charging.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3 style="font-size: 1.0em;">Overall Assessment</h3>
+                    <p>
+                        The experimental outputs collectively support the conclusion that the foot-powered mobile charging system is a viable and sustainable solution for public spaces.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

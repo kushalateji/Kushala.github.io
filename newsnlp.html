@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Novel Approach Towards News Category Prediction using NLP - Project Page</title>
+    <style>
+         body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/bg.jpg") no-repeat fixed; /* Use background property for an image */
+    background-size: cover;
+    color: #ffffffa8; /* Text Color */
+}
+
+        h2, h3 {
+            color: #ffffff83; /* White */
+        }
+        .major {
+            font-size: 1.2em;
+        }
+        .image.main {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded Corners for Image */
+        }
+        #project {
+            max-width: 600px; /* Adjusted to 600px for a slightly thinner article */
+            margin: 20px auto;
+            background-color: rgba(31, 30, 30, 0.947); /* Slightly transparent Darker Grey Background for Content */
+            padding: 20px;
+            border-radius: 10px; /* Rounded Corners for Content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Box Shadow for Depth */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+<body>
+    <span id="backButton" onclick="goBack()">&#8592;</span>
+    <!-- Project Page Content -->
+    <div id="project">
+        <h3 class="major">A Novel Approach Towards News Category Prediction using NLP</h3>
+        <span class="image main"></span>
+        <h3 style="font-size: 1.2em;">Introduction</h3>
+        <p>
+            The evolution of technology has significantly transformed the landscape of information consumption, with news being a prominent service influenced by these technological breakthroughs. Traditional news creation, dissemination, and reception have undergone substantial changes due to the advent of real-time, 24/7 news availability on smartphones. This research focuses on employing Natural Language Processing (NLP) to predict the category of news articles, aiming to enhance the efficiency of news categorization and delivery in the rapidly evolving digital era.
+        </p>
+
+        <h3 style="font-size: 1.2em;">Key Aspects</h3>
+        <p>
+            Objective:<br>
+            The primary objective of this research project is to develop an application that predicts the category of news articles. Leveraging NLP, the system categorizes articles into multiple themes, forming a hierarchical structure. The algorithm selects the category with a higher match rate if an article belongs to more than one category.
+        </p>
+        <p>
+            Machine Learning Algorithms:<br>
+            To achieve accurate news categorization, the project employs well-known machine learning algorithms, including Naive Bayes, Random Forest, K-Nearest Neighbor, and Support Vector Machine (SVM). These algorithms are trained on a diverse dataset obtained from the British Broadcasting Corporation (BBC), covering categories such as business, sports, technology, politics, and entertainment.
+        </p>
+        <p>
+            Hierarchical Structure:<br>
+            The research introduces a hierarchical structure by combining themes and categories. For example, an article related to baseball may be categorized under both the accomplishment category and the sports category. This approach recognizes the one-to-many connections, allowing articles to belong to multiple categories simultaneously.
+        </p>
+        <p>
+            Recommendation System:<br>
+            In addition to categorization, the project explores the implementation of a recommendation system. By recommending relevant content, news websites can enhance user engagement and increase exposure, attracting a larger audience.
+        </p>
+
+        <h3 style="font-size: 1.2em;">Development Process</h3>
+        <p>
+            Data Collection:<br>
+            The research team collects a comprehensive dataset from various sources, including the internet, media, and newspapers. The dataset comprises approximately 1900 data points with 30+ categories, reflecting diverse topics in news.
+        </p>
+        <p>
+            Data Preprocessing:<br>
+            To ensure data quality, preprocessing involves cleaning the data, handling missing values, and removing duplicates. The dataset is divided into an 80-20 split for training and testing, respectively.
+        </p>
+        <p>
+            Feature Visualization:<br>
+            Exploratory data analysis includes visualizing features such as the collection period of the dataset over six years and creating a word cloud. These visualizations provide insights into trends and help optimize the model's predictive capabilities.
+        </p>
+        <p>
+            Model Architecture:<br>
+            The capability of a computer software to comprehend spoken and written natural language is known as natural language processing (NLP). It belongs to artificial intelligence (AI). The study of linguistics is the origin of NLP, which has been around for more than 50 years.
+        </p>
+
+        <h3 style="font-size: 1.2em;">Experimental Results</h3>
+        <p>
+            Accuracy Assessment:<br>
+            The performance of the NLP model is evaluated using precision, recall, and overall accuracy metrics. The Naive Bayes algorithm achieves a commendable accuracy rate of 94%, showcasing its effectiveness in news category prediction.
+        </p>
+        <p>
+            Training Loss:<br>
+            During the training phase, the model demonstrates efficient learning, minimizing training loss, and making accurate predictions based on the chosen metrics.
+        </p>
+        <p>
+            Error Metrics:<br>
+            Error metrics, such as the rate of erroneous results per unit time, provide insights into the model's reliability and potential areas for improvement.
+        </p>
+        <p>
+            Future Implications:<br>
+            The research project sets the stage for future developments in news categorization and recommendation systems, contributing to the ongoing evolution of information consumption in the digital age.
+        </p>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+         body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/bg.jpg") no-repeat fixed; /* Use background property for an image */
+    background-size: cover;
+    color: #ffffffa8; /* Text Color */
+}
+
+        h2, h3 {
+            color: #ffffff83; /* White */
+        }
+        .major {
+            font-size: 1.2em;
+        }
+        .image.main {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded Corners for Image */
+        }
+        #project {
+            max-width: 600px; /* Adjusted to 600px for a slightly thinner article */
+            margin: 20px auto;
+            background-color: rgba(31, 30, 30, 0.947); /* Slightly transparent Darker Grey Background for Content */
+            padding: 20px;
+            border-radius: 10px; /* Rounded Corners for Content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Box Shadow for Depth */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+    
+<body>
+    <span id="backButton" onclick="goBack()">&#8592;</span>
+    <!-- Project Page Content -->
+    <div id="project">
+        <h3 class="major">Hospital Data Management</h3>
+        <span class="image main"></span>
+        <h3 style="font-size: 1.2em;">Introduction</h3>
+        <p>
+            Modernizing healthcare data management is essential for enhancing patient care and optimizing hospital operations. The integration of advanced technologies, such as Near Field Communication (NFC), with medical history management presents a promising solution. This research focuses on implementing a Hospital Patient Medical History Management System using NFC-enabled wristbands, providing an efficient and secure approach to storing and accessing patients' vital information.
+        </p>
+        <h3 style="font-size: 1.2em;">Key Aspects</h3>
+        <ul>
+            <li>NFC-Enabled Wristbands: The utilization of waterproof and reusable silicone wristbands embedded with encrypted NFC chips revolutionizes traditional patient identification and medical record systems.</li>
+            <li>Efficient Data Retrieval: NFC technology allows for quick and secure data retrieval, enabling healthcare providers to access comprehensive patient medical histories on the go, enhancing the speed and accuracy of diagnosis and treatment.</li>
+            <li>Paperless Information Handling: The transition from paper-based medical records to electronic data storage contributes to a reduction in physical storage requirements, eliminates the risk of loss or damage, and fosters eco-friendly, paperless information handling.</li>
+            <li>Structured Storage of Documents: Electronic storage facilitates structured organization of patient documents, including previous ailments, comorbidity details, prognosis, and allergies. This structured approach aids doctors in obtaining a comprehensive understanding of the patient's health history.</li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Development Process</h3>
+        <p>
+            The development process of the Hospital Patient Medical History Management System involves several key stages:
+        </p>
+        <ul>
+            <li>
+                <h3>Patient Categorization</h3>
+                <p>
+                    Patients are categorized as either INPATIENT or OUTPATIENT at the front desk. NFC-enabled wristbands are specifically provided to INPATIENTS, facilitating comprehensive medical history management for those requiring immediate and long-term care.
+                </p>
+            </li>
+
+            <li>
+                <h3>Data Collection and Conversion</h3>
+                <p>
+                    INPATIENTS fill out a medical data form, capturing both basic and detailed information. The collected data is stored electronically in the hospital's cloud database and converted into an exclusive Hypertext link assigned to each patient ID.
+                </p>
+            </li>
+
+            <li>
+                <h3>Hospital Cloud Database</h3>
+                <p>
+                    The designated URL, containing individual patient data, is stored in the hospital's cloud database. This serves as a read/write module and a secure backup, ensuring data accessibility even after the patient leaves the hospital.
+                </p>
+            </li>
+
+            <li>
+                <h3>NFC Encoding and Encryption</h3>
+                <p>
+                    NFC wristbands are encoded with the unique Hypertext link using NFC readers. Encryption with a custom username and password adds an additional layer of security, allowing authorized personnel to access patient data.
+                </p>
+            </li>
+
+            <li>
+                <h3>Diagnosis and Report Update</h3>
+                <p>
+                    Medical reports, including prognosis, scans, X-rays, ultrasounds, MRIs, and drug prescriptions, are updated to the NFC wristband and the hospital cloud database after each doctor visit, providing real-time information to the patient.
+                </p>
+            </li>
+
+            <li>
+                <h3>Patient Exit Procedure</h3>
+                <p>
+                    Upon receiving an exit letter, the patient's NFC wristband is collected, sterilized, and formatted for reusability. This ensures the wristbands are safe for the next inpatient, and all data is securely erased.
+                </p>
+            </li>
+            <li>
+                <h3>Electronic Data Retrieval and Reusability</h3>
+                <p>
+                    Electronic data stored in the hospital database allows patients to easily retrieve their medical history during subsequent visits. The process supports continuity of care and facilitates a smooth transition to new healthcare providers.
+                </p>
+            </li>
+            <h3 style="font-size: 1.2em;">Experimental Results</h3>
+            <ul>
+                <li>
+                    <h3>Efficient Data Accessibility</h3>
+                    <p>
+                        The NFC-enabled wristbands demonstrated efficient data retrieval, allowing healthcare providers to access and update patient information seamlessly.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3>Improved Diagnosis Process</h3>
+                    <p>
+                        The integration of real-time diagnostic information onto the NFC wristbands enhanced the diagnostic process, providing doctors with up-to-date data for comprehensive decision-making.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3>Secure and Reusable Wristbands</h3>
+                    <p>
+                        The NFC wristbands, equipped with encryption and sterilization processes, ensured the security of patient data and allowed for their safe reuse in subsequent hospital admissions.The NFC wristbands, equipped with encryption and sterilization processes, ensured the security of patient data and allowed for their safe reuse in subsequent hospital admissions.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3>Enhanced Patient Experience</h3>
+                    <p>
+                        The paperless and structured storage of medical history contributed to an improved patient experience, minimizing data-related errors and streamlining the overall healthcare process.
+                    </p>
+                </li>
+    
+                <li>
+                    <h3>Environmental Sustainability</h3>
+                    <p>
+                        The transition to electronic data storage promoted eco-friendly practices, reducing the reliance on paper-based records and contributing to a more sustainable healthcare environment.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+         body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/bg.jpg") no-repeat fixed; /* Use background property for an image */
+    background-size: cover;
+    color: #ffffffa8; /* Text Color */
+}
+
+        h2, h3 {
+            color: #ffffff83; /* White */
+        }
+        .major {
+            font-size: 1.2em;
+        }
+        .image.main {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded Corners for Image */
+        }
+        #project {
+            max-width: 600px; /* Adjusted to 600px for a slightly thinner article */
+            margin: 20px auto;
+            background-color: rgba(31, 30, 30, 0.947); /* Slightly transparent Darker Grey Background for Content */
+            padding: 20px;
+            border-radius: 10px; /* Rounded Corners for Content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Box Shadow for Depth */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+
+<body>
+    <span id="backButton" onclick="goBack()">&#8592;</span>
+    <!-- Project Page Content -->
+    <div id="project">
+        <h3 class="major">Credit Card Fraud Detection using Machine Learning</h3>
+        <h3 style="font-size: 1.2em;">Introduction</h3>
+        <p>
+            The project, "Credit Card Fraud Detection using Machine Learning," focuses on addressing the growing concerns related to fraudulent activities in online transactions. With the increasing reliance on digital payments, there is a crucial need for robust systems that can accurately identify and prevent credit card fraud. This project leverages machine learning algorithms and data analysis to enhance the security of online transactions and provide a safer environment for users.
+        </p>
+        <h3 style="font-size: 1.2em;">Key Aspects</h3>
+        <ul>
+            <li>Data Analysis and Feature Engineering: In-depth analysis of credit card transaction data and the extraction of relevant features to improve the accuracy of fraud detection models.</li>
+            <li>Machine Learning Models: Implementation of advanced machine learning algorithms, such as Random Forest, Support Vector Machines (SVM), and Neural Networks, to detect patterns indicative of fraudulent transactions.</li>
+            <li>Real-time Monitoring: Integration of a real-time monitoring system to promptly identify and respond to potential fraud, minimizing financial losses.</li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Development Process</h3>
+        <ul>
+            <li>
+                <h3>Data Collection</h3>
+                <p>
+                    Gathering a diverse dataset of credit card transactions, including both legitimate and fraudulent activities, to train and validate the machine learning models.
+                </p>
+            </li>
+
+            <li>
+                <h3>Preprocessing</h3>
+                <p>
+                    Cleaning and preprocessing the data, handling missing values, and normalizing features to prepare it for model training.
+                </p>
+            </li>
+
+            <li>
+                <h3>Model Training</h3>
+                <p>
+                    Training machine learning models on the preprocessed data, fine-tuning parameters, and evaluating performance using validation sets.
+                </p>
+            </li>
+
+            <li>
+                <h3>Real-time Integration</h3>
+                <p>
+                    Integrating the trained models into a real-time monitoring system for continuous analysis of incoming credit card transactions.
+                </p>
+            </li>
+
+            <li>
+                <h3>Alert System</h3>
+                <p>
+                    Implementing an alert system to notify relevant authorities or users in case of a potential fraudulent transaction, enabling quick response and mitigation.
+                </p>
+            </li>
+
+            <li>
+                <h3>Performance Optimization</h3>
+                <p>
+                    Optimizing the overall system performance, including model efficiency and response time, to ensure seamless integration into online payment platforms.
+                </p>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Experimental Results</h3>
+                <p>
+                    The experimental phase demonstrated the effectiveness of the credit card fraud detection system in accurately identifying and preventing fraudulent transactions.
+                </p>
+            <ul>
+
+            <li>
+                <h3>Model Accuracy</h3>
+                <p>
+                    The machine learning models achieved high accuracy rates, with precision and recall values indicating reliable fraud detection.
+                </p>
+            </li>
+
+            <li>
+                <h3>Real-time Response</h3>
+                <p>
+                    The real-time monitoring system exhibited quick response times, ensuring timely identification of potential fraud and triggering appropriate alerts.
+                </p>
+            </li>
+
+            <li>
+                <h3>False Positive Analysis</h3>
+                <p>
+                    Analysis of false positive cases to further refine the models and reduce the occurrence of false alarms without compromising on fraud detection accuracy.
+                </p>
+            </li>
+
+            <li>
+                <h3>User Feedback</h3>
+                <p>
+                    Collecting user feedback and continuously improving the system based on user experiences and evolving fraud patterns.
+                </p>
+            </li>
+        </ul>
+
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>

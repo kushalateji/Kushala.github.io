@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+         body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/bg.jpg") no-repeat fixed; /* Use background property for an image */
+    background-size: cover;
+    color: #ffffffa8; /* Text Color */
+}
+
+        h2, h3 {
+            color: #ffffff83; /* White */
+        }
+        .major {
+            font-size: 1.2em;
+        }
+        .image.main {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded Corners for Image */
+        }
+        #project {
+            max-width: 600px; /* Adjusted to 600px for a slightly thinner article */
+            margin: 20px auto;
+            background-color: rgba(31, 30, 30, 0.947); /* Slightly transparent Darker Grey Background for Content */
+            padding: 20px;
+            border-radius: 10px; /* Rounded Corners for Content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Box Shadow for Depth */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+
+<body>
+    <span id="backButton" onclick="goBack()">&#8592;</span>
+    <!-- Project Page Content -->
+    <div id="project">
+        <h3 class="major">Color Detection using OpenCV and Pandas</h3>
+        <h3 style="font-size: 1.2em;">Introduction</h3>
+        <p>
+            The project, "Color Detection using OpenCV and Pandas," aims to provide a practical solution for accurately identifying and displaying color names by clicking on specific pixels in an input image. This application caters to the needs of artists and designers, offering a tool to precisely recognize color patterns for enhanced visual representation.
+        </p>
+        <h3 style="font-size: 1.2em;">Key Aspects</h3>
+        <ul>
+            <li>Data Representation: Utilizing RGB values to represent colors and creating a dataset for accurate color prediction.</li>
+            <li>OpenCV Integration: Incorporating OpenCV for image processing and interaction with pixel-level color data.</li>
+            <li>Mouse Event Handling: Implementing a mouse callback function for users to click on pixels and trigger color prediction.</li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Development Process</h3>
+        <ul>
+            <li>
+                <h3>Image Input</h3>
+                <p>
+                    Accepting user-provided images through an argument parser for color analysis.
+                </p>
+            </li>
+    
+            <li>
+                <h3>Data Loading</h3>
+                <p>
+                    Loading a predefined dataset of color names and RGB values using Pandas for reference during color prediction.
+                </p>
+            </li>
+    
+            <li>
+                <h3>Mouse Interaction</h3>
+                <p>
+                    Implementing a mouse callback function to capture double-click events on the image window and extract RGB values of the selected pixel.
+                </p>
+            </li>
+    
+            <li>
+                <h3>Color Prediction</h3>
+                <p>
+                    Calculating color distance using RGB values to predict the closest color name from the dataset.
+                </p>
+            </li>
+    
+            <li>
+                <h3>Display and Execution</h3>
+                <p>
+                    Displaying the image window and updating color information upon user interaction. Running the script from the command prompt with image path as an argument.
+                </p>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Experimental Results</h3>
+        <p>
+            The color detection system demonstrated accurate prediction of color names based on user-selected pixels in the input image.
+        </p>
+        <ul>
+    
+            <li>
+                <h3>Color Recognition</h3>
+                <p>
+                    The system accurately identified color names through RGB distance calculations, providing a reliable tool for artists and designers.
+                </p>
+            </li>
+    
+            <li>
+                <h3>User Interaction</h3>
+                <p>
+                    Smooth interaction with the mouse callback function allowed users to precisely select pixels for color analysis.
+                </p>
+            </li>
+    
+            <li>
+                <h3>Real-time Display</h3>
+                <p>
+                    The application exhibited real-time color information updates on the image window, enhancing the user experience.
+                </p>
+            </li>
+    
+        </ul>
+    
+    </div>
+    
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+
+</html>

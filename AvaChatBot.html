@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+         body {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/bg.jpg") no-repeat fixed; /* Use background property for an image */
+    background-size: cover;
+    color: #ffffffa8; /* Text Color */
+}
+
+        h2, h3 {
+            color: #ffffff83; /* White */
+        }
+        .major {
+            font-size: 1.2em;
+        }
+        .image.main {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px; /* Rounded Corners for Image */
+        }
+        #project {
+            max-width: 600px; /* Adjusted to 600px for a slightly thinner article */
+            margin: 20px auto;
+            background-color: rgba(31, 30, 30, 0.947); /* Slightly transparent Darker Grey Background for Content */
+            padding: 20px;
+            border-radius: 10px; /* Rounded Corners for Content */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); /* Box Shadow for Depth */
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        #backButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #ffffff; 
+        }
+    </style>
+</head>
+
+<body>
+    <span id="backButton" onclick="goBack()">&#8592;</span>
+    <!-- Project Page Content -->
+    <div id="project">
+        <h3 class="major">AvaChatBot Project</h3>
+        <h3 style="font-size: 1.2em;">Overview</h3>
+        <p>
+            AvaChatBot is an intelligent AI chatbot developed to engage in natural language conversations. 
+            The project incorporates advanced natural language processing techniques, enabling Ava to 
+            understand user input and respond intelligently across various contexts.
+        </p>
+
+        <h3 style="font-size: 1.2em;">Key Features</h3>
+        <ul>
+            <li>Natural Language Processing: AvaChatBot uses advanced natural language processing techniques to understand and respond to user input in a conversational manner.</li>
+            <li>Intents and Responses: Trained with various intents, Ava can handle a wide range of user queries and provide relevant responses.</li>
+            <li>Integration with External APIs: AvaChatBot can interact with external services, including seamless integration with the Google Custom Search API for enhanced internet search capabilities.</li>
+            <li>User-Friendly Interface: The chatbot comes with a simple and intuitive user interface, making it easy for users to engage in conversations.</li>
+        </ul>
+
+        <h3 style="font-size: 1.2em;">How It Works</h3>
+        <p>
+            AvaChatBot's functionality is rooted in a neural network trained on a diverse set of user intents. 
+            The training data includes patterns for recognizing specific user queries, allowing Ava to comprehend 
+            and respond contextually. The system tokenizes user input, processes it through a bag-of-words model, 
+            and predicts the intent using PyTorch.
+        </p>
+
+        <p>
+            The chatbot supports various intents, from general conversations to specialized tasks like Google searches 
+            and weather inquiries. Additionally, Ava leverages the OpenAI GPT-3.5-turbo model for natural language 
+            generation, enabling it to provide creative and contextually relevant responses.
+        </p>
+
+        <p>
+            The user-friendly interface, built using Tkinter, facilitates seamless interactions. Users can engage with 
+            Ava by entering messages in the application, exploring its diverse capabilities and receiving intelligent 
+            responses tailored to the context of their queries.
+        </p>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

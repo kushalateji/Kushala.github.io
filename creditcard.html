@@ -55,92 +55,88 @@
         <h3 class="major">Credit Card Fraud Detection using Machine Learning</h3>
         <h3 style="font-size: 1.2em;">Introduction</h3>
         <p>
-            The project, "Credit Card Fraud Detection using Machine Learning," focuses on addressing the growing concerns related to fraudulent activities in online transactions. With the increasing reliance on digital payments, there is a crucial need for robust systems that can accurately identify and prevent credit card fraud. This project leverages machine learning algorithms and data analysis to enhance the security of online transactions and provide a safer environment for users.
+            In response to the surge in online fraud during the COVID-19 pandemic, exacerbated by increased online shopping, a model is proposed to combat credit and debit card fraud. Leveraging machine learning, particularly logistic regression, this model aims to distinguish between legitimate and fraudulent transactions, providing a binary classification (TRUE or FALSE) result.
         </p>
         <h3 style="font-size: 1.2em;">Key Aspects</h3>
         <ul>
-            <li>Data Analysis and Feature Engineering: In-depth analysis of credit card transaction data and the extraction of relevant features to improve the accuracy of fraud detection models.</li>
-            <li>Machine Learning Models: Implementation of advanced machine learning algorithms, such as Random Forest, Support Vector Machines (SVM), and Neural Networks, to detect patterns indicative of fraudulent transactions.</li>
-            <li>Real-time Monitoring: Integration of a real-time monitoring system to promptly identify and respond to potential fraud, minimizing financial losses.</li>
-        </ul>
-        <h3 style="font-size: 1.2em;">Development Process</h3>
-        <ul>
             <li>
-                <h3>Data Collection</h3>
-                <p>
-                    Gathering a diverse dataset of credit card transactions, including both legitimate and fraudulent activities, to train and validate the machine learning models.
-                </p>
+                <strong>Machine Learning Approach:</strong>
+                <ul>
+                    <li>Utilizes supervised learning, specifically logistic regression, for binary classification of transactions.</li>
+                    <li>Trains the model on a dataset, including both fraudulent and legitimate transactions, obtained from Kaggle.</li>
+                </ul>
             </li>
-
             <li>
-                <h3>Preprocessing</h3>
-                <p>
-                    Cleaning and preprocessing the data, handling missing values, and normalizing features to prepare it for model training.
-                </p>
+                <strong>Data Imbalance Handling:</strong>
+                <ul>
+                    <li>Addresses the imbalanced dataset, with only 492 fraudulent transactions out of 284,807, by employing under-sampling to create a balanced dataset.</li>
+                </ul>
             </li>
-
             <li>
-                <h3>Model Training</h3>
-                <p>
-                    Training machine learning models on the preprocessed data, fine-tuning parameters, and evaluating performance using validation sets.
-                </p>
-            </li>
-
-            <li>
-                <h3>Real-time Integration</h3>
-                <p>
-                    Integrating the trained models into a real-time monitoring system for continuous analysis of incoming credit card transactions.
-                </p>
-            </li>
-
-            <li>
-                <h3>Alert System</h3>
-                <p>
-                    Implementing an alert system to notify relevant authorities or users in case of a potential fraudulent transaction, enabling quick response and mitigation.
-                </p>
-            </li>
-
-            <li>
-                <h3>Performance Optimization</h3>
-                <p>
-                    Optimizing the overall system performance, including model efficiency and response time, to ensure seamless integration into online payment platforms.
-                </p>
+                <strong>Feature Transformation:</strong>
+                <ul>
+                    <li>Employs Principal Component Analysis (PCA) to convert sensitive information into numerical values, ensuring privacy protection.</li>
+                </ul>
             </li>
         </ul>
         <h3 style="font-size: 1.2em;">Experimental Results</h3>
-                <p>
-                    The experimental phase demonstrated the effectiveness of the credit card fraud detection system in accurately identifying and preventing fraudulent transactions.
-                </p>
-            <ul>
-
+        <ul>
             <li>
-                <h3>Model Accuracy</h3>
-                <p>
-                    The machine learning models achieved high accuracy rates, with precision and recall values indicating reliable fraud detection.
-                </p>
-            </li>
-
-            <li>
-                <h3>Real-time Response</h3>
-                <p>
-                    The real-time monitoring system exhibited quick response times, ensuring timely identification of potential fraud and triggering appropriate alerts.
-                </p>
-            </li>
-
-            <li>
-                <h3>False Positive Analysis</h3>
-                <p>
-                    Analysis of false positive cases to further refine the models and reduce the occurrence of false alarms without compromising on fraud detection accuracy.
-                </p>
-            </li>
-
-            <li>
-                <h3>User Feedback</h3>
-                <p>
-                    Collecting user feedback and continuously improving the system based on user experiences and evolving fraud patterns.
-                </p>
+                <strong>Model Accuracy:</strong>
+                <ul>
+                    <li>Achieves approximately 92% accuracy on training data and 90% on testing data, indicating robust performance.</li>
+                </ul>
             </li>
         </ul>
+        <h3 style="font-size: 1.2em;">Algorithm Implementation</h3>
+        <ul>
+            <li>
+                <strong>Logistic Regression:</strong>
+                <ul>
+                    <li>Applies logistic regression for binary classification, providing results between 0 and 1.</li>
+                    <li>Steps include data pre-processing, model fitting, result prediction, confusion matrix creation, and visualization of test set results.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Training and Testing Dataset</h3>
+        <ul>
+            <li>
+                <strong>Data Division:</strong>
+                <ul>
+                    <li>Divides the dataset into training (80%) and testing (20%) sets, with under-sampling to balance fraudulent and legitimate transactions.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Realistic Constraints</h3>
+        <ul>
+            <li>
+                <strong>Imbalanced Dataset:</strong>
+                <ul>
+                    <li>Faces challenges due to a significantly higher number of legitimate transactions compared to fraudulent ones.</li>
+                    <li>Deals with transformed numerical data using PCA for privacy reasons.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Coding and Testing</h3>
+        <ul>
+            <li>
+                <strong>Libraries Used:</strong>
+                <ul>
+                    <li>Imports necessary libraries such as NumPy and pd for code functionality.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3 style="font-size: 1.2em;">Result</h3>
+        <ul>
+            <li>
+                <strong>Code Output:</strong>
+                <ul>
+                    <li>Achieves an accuracy of around 90%, demonstrated through output screenshots.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
 
     </div>
     <script>

@@ -1,6 +1,6 @@
 Portfolio ReadMe
 
-Welcome to my portfolio! This collection provides a glimpse into my professional journey, showcasing key aspects of my experience, notable projects, credentials, resume, and contact information.
+Welcome to my portfolio! This collection provides a glimpse into my professional journey, showcasing key aspects of my experience, notable projects, credentials, resume, professional experience, and contact information.
 
 Table of Contents
 1. Introduction
@@ -12,10 +12,13 @@ Table of Contents
 3. Credentials
    - Details about my educational background and academic achievements.
 
-4. Resume
+4. Professional Experience
+   - A comprehensive overview of my work history, highlighting key roles, responsibilities, and accomplishments.
+
+5. Resume
    - A chronological overview of my work history, highlighting key roles and responsibilities.
 
-5. Contact Information
+6. Contact Information
    - How to get in touch with me for potential opportunities, collaborations, or inquiries.
 
 How to Navigate
